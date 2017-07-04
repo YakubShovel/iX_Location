@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		119923ED2B75CF7CC343A892 /* Pods_iX_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C372C1FC86209BFF405E98 /* Pods_iX_Location.framework */; };
+		3067B7A51F0BAF6600ED9112 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3067B7A41F0BAF6600ED9112 /* SettingsTableViewController.swift */; };
+		3067B7A71F0BC77100ED9112 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3067B7A61F0BC77100ED9112 /* Activity.swift */; };
+		3067B7A91F0BC8F200ED9112 /* AddActivityDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3067B7A81F0BC8F200ED9112 /* AddActivityDelegate.swift */; };
 		306AFDBD1F0A805800E55423 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306AFDBC1F0A805800E55423 /* AppDelegate.swift */; };
 		306AFDBF1F0A805800E55423 /* AppleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306AFDBE1F0A805800E55423 /* AppleMapsViewController.swift */; };
 		306AFDC21F0A805800E55423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306AFDC01F0A805800E55423 /* Main.storyboard */; };
@@ -15,11 +18,13 @@
 		306AFDC71F0A805800E55423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306AFDC51F0A805800E55423 /* LaunchScreen.storyboard */; };
 		306AFDCF1F0A8ABB00E55423 /* GoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306AFDCE1F0A8ABB00E55423 /* GoogleMapsViewController.swift */; };
 		306AFDD11F0A92F200E55423 /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306AFDD01F0A92F200E55423 /* ActivityTableViewController.swift */; };
-		306AFDD31F0A941000E55423 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306AFDD21F0A941000E55423 /* SettingsViewController.swift */; };
 		306AFDD51F0B99FC00E55423 /* AddActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306AFDD41F0B99FC00E55423 /* AddActivityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3067B7A41F0BAF6600ED9112 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		3067B7A61F0BC77100ED9112 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		3067B7A81F0BC8F200ED9112 /* AddActivityDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActivityDelegate.swift; sourceTree = "<group>"; };
 		306AFDB91F0A805800E55423 /* iX_Location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iX_Location.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		306AFDBC1F0A805800E55423 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		306AFDBE1F0A805800E55423 /* AppleMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMapsViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +34,6 @@
 		306AFDC81F0A805800E55423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		306AFDCE1F0A8ABB00E55423 /* GoogleMapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapsViewController.swift; sourceTree = "<group>"; };
 		306AFDD01F0A92F200E55423 /* ActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
-		306AFDD21F0A941000E55423 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		306AFDD41F0B99FC00E55423 /* AddActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActivityViewController.swift; sourceTree = "<group>"; };
 		42EFD1F8D2C63D81C2549266 /* Pods-iX_Location.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iX_Location.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iX_Location/Pods-iX_Location.debug.xcconfig"; sourceTree = "<group>"; };
 		43C372C1FC86209BFF405E98 /* Pods_iX_Location.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iX_Location.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,8 +86,10 @@
 				306AFDBE1F0A805800E55423 /* AppleMapsViewController.swift */,
 				306AFDCE1F0A8ABB00E55423 /* GoogleMapsViewController.swift */,
 				306AFDD01F0A92F200E55423 /* ActivityTableViewController.swift */,
-				306AFDD21F0A941000E55423 /* SettingsViewController.swift */,
 				306AFDD41F0B99FC00E55423 /* AddActivityViewController.swift */,
+				3067B7A41F0BAF6600ED9112 /* SettingsTableViewController.swift */,
+				3067B7A61F0BC77100ED9112 /* Activity.swift */,
+				3067B7A81F0BC8F200ED9112 /* AddActivityDelegate.swift */,
 				306AFDC01F0A805800E55423 /* Main.storyboard */,
 				306AFDC31F0A805800E55423 /* Assets.xcassets */,
 				306AFDC51F0A805800E55423 /* LaunchScreen.storyboard */,
@@ -225,10 +231,12 @@
 			files = (
 				306AFDD11F0A92F200E55423 /* ActivityTableViewController.swift in Sources */,
 				306AFDBF1F0A805800E55423 /* AppleMapsViewController.swift in Sources */,
+				3067B7A71F0BC77100ED9112 /* Activity.swift in Sources */,
 				306AFDBD1F0A805800E55423 /* AppDelegate.swift in Sources */,
 				306AFDD51F0B99FC00E55423 /* AddActivityViewController.swift in Sources */,
-				306AFDD31F0A941000E55423 /* SettingsViewController.swift in Sources */,
+				3067B7A91F0BC8F200ED9112 /* AddActivityDelegate.swift in Sources */,
 				306AFDCF1F0A8ABB00E55423 /* GoogleMapsViewController.swift in Sources */,
+				3067B7A51F0BAF6600ED9112 /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

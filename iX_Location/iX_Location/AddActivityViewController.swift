@@ -10,6 +10,11 @@ import UIKit
 
 class AddActivityViewController: UIViewController {
 
+    @IBOutlet var activityName: UIView!
+    
+    var newActivity: Activity? = Activity()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,10 +30,10 @@ class AddActivityViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
 
-    @IBAction func composeButtonTapped(_ sender: Any) {
-        //create and save Activity object
-        self.dismiss(animated: true, completion: nil)
-
+    
+    @IBAction func saveButtonTapped(_ sender: Any) {
+        //activityName.text = newActivity.name
+        
     }
     /*
     // MARK: - Navigation
