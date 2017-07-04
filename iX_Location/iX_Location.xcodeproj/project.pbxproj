@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		119923ED2B75CF7CC343A892 /* Pods_iX_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C372C1FC86209BFF405E98 /* Pods_iX_Location.framework */; };
 		306AFDBD1F0A805800E55423 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306AFDBC1F0A805800E55423 /* AppDelegate.swift */; };
 		306AFDBF1F0A805800E55423 /* AppleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306AFDBE1F0A805800E55423 /* AppleMapsViewController.swift */; };
 		306AFDC21F0A805800E55423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306AFDC01F0A805800E55423 /* Main.storyboard */; };
 		306AFDC41F0A805800E55423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306AFDC31F0A805800E55423 /* Assets.xcassets */; };
 		306AFDC71F0A805800E55423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306AFDC51F0A805800E55423 /* LaunchScreen.storyboard */; };
+		306AFDCF1F0A8ABB00E55423 /* GoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306AFDCE1F0A8ABB00E55423 /* GoogleMapsViewController.swift */; };
+		306AFDD11F0A92F200E55423 /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306AFDD01F0A92F200E55423 /* ActivityTableViewController.swift */; };
+		306AFDD31F0A941000E55423 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306AFDD21F0A941000E55423 /* SettingsViewController.swift */; };
+		306AFDD51F0B99FC00E55423 /* AddActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306AFDD41F0B99FC00E55423 /* AddActivityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,13 @@
 		306AFDC31F0A805800E55423 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		306AFDC61F0A805800E55423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		306AFDC81F0A805800E55423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		306AFDCE1F0A8ABB00E55423 /* GoogleMapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapsViewController.swift; sourceTree = "<group>"; };
+		306AFDD01F0A92F200E55423 /* ActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
+		306AFDD21F0A941000E55423 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		306AFDD41F0B99FC00E55423 /* AddActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActivityViewController.swift; sourceTree = "<group>"; };
+		42EFD1F8D2C63D81C2549266 /* Pods-iX_Location.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iX_Location.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iX_Location/Pods-iX_Location.debug.xcconfig"; sourceTree = "<group>"; };
+		43C372C1FC86209BFF405E98 /* Pods_iX_Location.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iX_Location.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		452E33EEEBC398A1F73BB9B5 /* Pods-iX_Location.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iX_Location.release.xcconfig"; path = "Pods/Target Support Files/Pods-iX_Location/Pods-iX_Location.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119923ED2B75CF7CC343A892 /* Pods_iX_Location.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17433F94D9521BDA365CD22B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42EFD1F8D2C63D81C2549266 /* Pods-iX_Location.debug.xcconfig */,
+				452E33EEEBC398A1F73BB9B5 /* Pods-iX_Location.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		306AFDB01F0A805700E55423 = {
 			isa = PBXGroup;
 			children = (
 				306AFDBB1F0A805800E55423 /* iX_Location */,
 				306AFDBA1F0A805800E55423 /* Products */,
+				17433F94D9521BDA365CD22B /* Pods */,
+				B4A4559956CB2B3B29D134D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +80,24 @@
 			children = (
 				306AFDBC1F0A805800E55423 /* AppDelegate.swift */,
 				306AFDBE1F0A805800E55423 /* AppleMapsViewController.swift */,
+				306AFDCE1F0A8ABB00E55423 /* GoogleMapsViewController.swift */,
+				306AFDD01F0A92F200E55423 /* ActivityTableViewController.swift */,
+				306AFDD21F0A941000E55423 /* SettingsViewController.swift */,
+				306AFDD41F0B99FC00E55423 /* AddActivityViewController.swift */,
 				306AFDC01F0A805800E55423 /* Main.storyboard */,
 				306AFDC31F0A805800E55423 /* Assets.xcassets */,
 				306AFDC51F0A805800E55423 /* LaunchScreen.storyboard */,
 				306AFDC81F0A805800E55423 /* Info.plist */,
 			);
 			path = iX_Location;
+			sourceTree = "<group>";
+		};
+		B4A4559956CB2B3B29D134D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43C372C1FC86209BFF405E98 /* Pods_iX_Location.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 306AFDCB1F0A805800E55423 /* Build configuration list for PBXNativeTarget "iX_Location" */;
 			buildPhases = (
+				A1479247B93CED5A89B46EAD /* [CP] Check Pods Manifest.lock */,
 				306AFDB51F0A805800E55423 /* Sources */,
 				306AFDB61F0A805800E55423 /* Frameworks */,
 				306AFDB71F0A805800E55423 /* Resources */,
+				11F2A82E24D161894C237B27 /* [CP] Embed Pods Frameworks */,
+				8C52C4EABB8CE94916008D0F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +170,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11F2A82E24D161894C237B27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iX_Location/Pods-iX_Location-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C52C4EABB8CE94916008D0F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iX_Location/Pods-iX_Location-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1479247B93CED5A89B46EAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		306AFDB51F0A805800E55423 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306AFDD11F0A92F200E55423 /* ActivityTableViewController.swift in Sources */,
 				306AFDBF1F0A805800E55423 /* AppleMapsViewController.swift in Sources */,
 				306AFDBD1F0A805800E55423 /* AppDelegate.swift in Sources */,
+				306AFDD51F0B99FC00E55423 /* AddActivityViewController.swift in Sources */,
+				306AFDD31F0A941000E55423 /* SettingsViewController.swift in Sources */,
+				306AFDCF1F0A8ABB00E55423 /* GoogleMapsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +349,7 @@
 		};
 		306AFDCC1F0A805800E55423 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42EFD1F8D2C63D81C2549266 /* Pods-iX_Location.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iX_Location/Info.plist;
@@ -270,6 +362,7 @@
 		};
 		306AFDCD1F0A805800E55423 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 452E33EEEBC398A1F73BB9B5 /* Pods-iX_Location.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iX_Location/Info.plist;
@@ -299,6 +392,7 @@
 				306AFDCD1F0A805800E55423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
